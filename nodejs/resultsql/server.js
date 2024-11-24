@@ -17,6 +17,16 @@ const db = mysql.createConnection({
     port: 3307, // Use MySQL port (default is 3306)
 });
 
+//CREATE TABLE students (
+//     id INT AUTO_INCREMENT PRIMARY KEY,
+//     name VARCHAR(255) NOT NULL,
+//     roll_number VARCHAR(100) NOT NULL UNIQUE,
+//     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+//     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+//   );
+  
+
+
 // Connect to the Database
 db.connect((err) => {
     if (err) {
