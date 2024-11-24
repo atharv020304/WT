@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-foot {
+  height: 20px;
+  width: 100%;
+  font-size: 28px;
+  margin: 20px 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.board {
+  width: 400px;
+  margin: auto;
+  border: 10px solid rgb(8, 8, 8);
+}
+
+.board td:before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+@media (max-width: 450px) {
+  .board {
+    width: 200px;
+  }
+}

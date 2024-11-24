@@ -1,0 +1,58 @@
+/* Video Background */
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content container */
+.container {
+  position: relative;
+  padding: 100px 0;
+  z-index: 1;
+  color: #fff;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 40px;
+}
+
+/* Column Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  margin-bottom: 20px;
+}
+
+/* Section Headers */
+h2 {
+  color: #f1c40f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Card for content */
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .container {
+    padding: 50px 10px;
+  }
+}

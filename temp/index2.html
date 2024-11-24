@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati labore quam aut non, sint officiis provident vel consequatur eos fugit suscipit. Possimus iste cupiditate harum, provident ipsa asperiores voluptatibus doloribus!
+    </p>
+
+    <button class="btn" onclick="para()">btn</button>
+
+    <script>
+        let ck = false; 
+
+        function para(){
+            var para = document.querySelector('p');
+            if(ck == false){
+                para.style.visibility = 'hidden';
+                ck = true;
+            }else{
+                para.style.visibility = 'visible';
+                ck = false;
+            }
+        }
+    </script>
+</body>
+</html>

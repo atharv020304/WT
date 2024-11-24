@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #1c1c1c, #1c1c1c);
+}
+
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-foreground video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+header, section, footer {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.project, .activity, .achievement {
+    margin-bottom: 20px;
+}
+
+.project h3, .activity h3, .achievement h3 {
+    font-size: 1.5em;
+    color: #ff6f61;
+}
+
+.project p, .activity p, .achievement p {
+    font-size: 1em;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.section-title {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
